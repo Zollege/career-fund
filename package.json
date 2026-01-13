@@ -1,0 +1,16 @@
+{
+  "name": "career-fund",
+  "version": "1.0.0",
+  "description": "Career Fund Jekyll site",
+  "scripts": {
+    "postinstall": "mkdir -p assets/css assets/js && cp node_modules/bootstrap/dist/css/bootstrap.min.css assets/css/ && cp node_modules/bootstrap/dist/js/bootstrap.bundle.min.js assets/js/",
+    "start": "bundle exec jekyll serve",
+    "dev": "bundle exec jekyll serve --incremental --livereload"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.2"
+  }
+}

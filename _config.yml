@@ -1,0 +1,22 @@
+# Site Settings
+title: Career Fund
+description: Career Fund - Supporting career development
+url: https://career.fund
+baseurl: ""
+
+# Build Settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - package.json
+  - package-lock.json
+  - README.md
+  - .git
+  - .gitignore
