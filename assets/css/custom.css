@@ -4,6 +4,7 @@
     --primary-color: #0D1F2D;
     --light-color: #E2E8F0;
     --gray-color: #94A3B8;
+    --background-gradient-primary: linear-gradient(100.73deg, rgba(0, 121, 140, 0.1) 0%, rgba(57, 201, 201, 0.05) 100%);
 }
 
 body {
@@ -292,7 +293,7 @@ p {
     }
     
     .hero-section {
-        padding: 40px 0;
+        padding-top: 40px;
         min-height: auto;
     }
     
@@ -1096,11 +1097,13 @@ p {
 }
 
 /* Partners Page Styles */
-.partners-hero-section,
+.partners-hero-section{
+    position: relative;
+    overflow: hidden;
+}
 .about-hero-section,
 .students-hero-section {
-    padding-top: 100px;
-    background: var(--primary-color);
+    background: var(--background-gradient-primary);
     position: relative;
     overflow: hidden;
 }
@@ -1166,8 +1169,7 @@ p {
 
 /* Growth Services Section */
 .growth-services-section {
-    padding-bottom: 100px;
-    background: var(--primary-color);
+    padding: 100px 0;
 }
 
 .growth-services-card {
@@ -1323,7 +1325,8 @@ p {
     .partners-hero-section,
     .about-hero-section,
     .students-hero-section {
-        padding: 40px 0;
+        padding-top: 40px;
+        padding-bottom: 0px;
     }
     
     .partners-hero-image-wrapper,
@@ -2111,7 +2114,7 @@ p {
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 20px;
-    padding: 32px;
+    padding: 32px 10px;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 }
@@ -2125,22 +2128,36 @@ p {
 
 .accounts-layout {
     display: flex;
-    gap: 32px;
+    gap: 12px;
     align-items: flex-start;
+    justify-content: space-evenly;
 }
 
 .accounts-table-wrapper {
-    width: 385px;
-    max-height: 316px;
+    max-height: 410px;
     overflow-x: auto;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     padding: 16px;
 }
 
+@media (min-width: 768px) {
+    .accounts-table-wrapper {
+        min-width: 385px;
+        max-height: 345px;
+    }
+}
+
 .accounts-table-wrapper .accounts-table th,
 .accounts-table-wrapper .accounts-table td {
     font-size: 11.38px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.accounts-table-wrapper .accounts-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 
 .accounts-table-wrapper .accounts-table td {
