@@ -16,6 +16,11 @@
     <link href="{{ '/assets/css/bootstrap.min.css' | relative_url }}" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="{{ '/assets/css/custom.css' | relative_url }}" rel="stylesheet">
+    
+    <!-- Schema.org Structured Data -->
+    {% include schema-organization.html %}
+    {% include schema-breadcrumb.html %}
+    {% include schema-webpage.html %}
 </head>
 <body>
     {% include header.html %}

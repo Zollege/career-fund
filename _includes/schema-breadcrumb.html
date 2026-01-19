@@ -1,0 +1,27 @@
+{% assign crumbs = page.url | split: '/' %}
+{% assign crumb_count = 0 %}
+{% for crumb in crumbs offset: 1 %}
+  {% if crumb != '' %}
+    {% assign crumb_count = crumb_count | plus: 1 %}
+  {% endif %}
+{% endfor %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "{{ site.url }}{{ site.baseurl }}/"
+    }{% if page.url != '/' %},
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "{{ page.title }}",
+      "item": "{{ site.url }}{{ site.baseurl }}{{ page.url }}"
+    }{% endif %}
+  ]
+}
+</script>
