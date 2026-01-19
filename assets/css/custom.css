@@ -1096,29 +1096,39 @@ p {
 }
 
 /* Partners Page Styles */
-.partners-hero-section {
+.partners-hero-section,
+.about-hero-section,
+.students-hero-section {
     padding-top: 100px;
     background: var(--primary-color);
     position: relative;
     overflow: hidden;
 }
 
-.partners-hero-text {
+.partners-hero-text,
+.about-hero-text,
+.students-hero-text {
     padding-right: 40px;
 }
 
-.partners-hero-text h1 {
+.partners-hero-text h1,
+.about-hero-text h1,
+.students-hero-text h1 {
     margin-bottom: 24px;
 }
 
-.partners-hero-text p {
+.partners-hero-text p,
+.about-hero-text p,
+.students-hero-text p {
     font-size: 20px;
     line-height: 30px;
     color: var(--light-color);
     margin: 0;
 }
 
-.partners-hero-image-wrapper {
+.partners-hero-image-wrapper,
+.about-hero-image-wrapper,
+.students-hero-image-wrapper {
     position: relative;
     display: flex;
     align-items: center;
@@ -1265,17 +1275,23 @@ p {
 
 /* Responsive Partners Page */
 @media (max-width: 991.98px) {
-    .partners-hero-section {
+    .partners-hero-section,
+    .about-hero-section,
+    .students-hero-section {
         padding: 60px 0;
     }
     
-    .partners-hero-text {
+    .partners-hero-text,
+    .about-hero-text,
+    .students-hero-text {
         padding-right: 0;
         margin-bottom: 40px;
         text-align: center;
     }
     
-    .partners-hero-image-wrapper {
+    .partners-hero-image-wrapper,
+    .about-hero-image-wrapper,
+    .students-hero-image-wrapper {
         min-height: 400px;
     }
     
@@ -1304,11 +1320,15 @@ p {
 }
 
 @media (max-width: 575.98px) {
-    .partners-hero-section {
+    .partners-hero-section,
+    .about-hero-section,
+    .students-hero-section {
         padding: 40px 0;
     }
     
-    .partners-hero-image-wrapper {
+    .partners-hero-image-wrapper,
+    .about-hero-image-wrapper,
+    .students-hero-image-wrapper {
         min-height: 300px;
     }
     
@@ -1356,6 +1376,65 @@ p {
     padding: 100px 0;
     background: linear-gradient(180deg, rgba(0, 121, 140, 0.15) 0%, rgba(0, 121, 140, 0.05) 50%, rgba(0, 121, 140, 0.1) 100%);
     position: relative;
+}
+
+/* Fulfilling Careers Section */
+.fulfilling-careers-section {
+    padding: 100px 0;
+    background: var(--primary-color);
+    position: relative;
+}
+
+.fulfilling-careers-section .section-title {
+    text-align: center;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+.fulfilling-careers-intro {
+    font-size: 18px;
+    line-height: 28px;
+    color: #fff;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 60px;
+}
+
+/* Responsive Fulfilling Careers */
+@media (max-width: 991.98px) {
+    .fulfilling-careers-section {
+        padding: 60px 0;
+    }
+    
+    .fulfilling-careers-section .section-title {
+        font-size: 28px;
+        margin-bottom: 24px;
+    }
+    
+    .fulfilling-careers-intro {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .fulfilling-careers-section {
+        padding: 40px 0;
+    }
+    
+    .fulfilling-careers-section .section-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    
+    .fulfilling-careers-intro {
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 32px;
+    }
 }
 
 .core-values-section .section-title {
@@ -1444,6 +1523,205 @@ p {
     .core-value-item {
         margin-bottom: 32px;
         padding: 16px;
+    }
+}
+
+/* What We Believe Section */
+.what-we-believe-section {
+    padding: 100px 0;
+    background: var(--primary-color);
+    position: relative;
+}
+
+.what-we-believe-section .section-title {
+    text-align: center;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+.what-we-believe-intro {
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--light-color);
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 60px;
+}
+
+.what-we-believe-testimonial {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.what-we-believe-testimonial .testimonial-panel {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 48px;
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+.what-we-believe-testimonial .testimonial-quote {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 40px;
+    color: #fff;
+    margin: 0 0 32px 0;
+    font-style: italic;
+}
+
+.what-we-believe-testimonial .testimonial-attribution {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+}
+
+.what-we-believe-testimonial .testimonial-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    margin: 0;
+}
+
+.what-we-believe-testimonial .testimonial-title,
+.what-we-believe-testimonial .testimonial-company {
+    font-size: 16px;
+    color: var(--light-color);
+    margin: 0;
+}
+
+/* Responsive What We Believe */
+@media (max-width: 991.98px) {
+    .what-we-believe-section {
+        padding: 60px 0;
+    }
+    
+    .what-we-believe-section .section-title {
+        font-size: 28px;
+        margin-bottom: 24px;
+    }
+    
+    .what-we-believe-intro {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 40px;
+    }
+    
+    .what-we-believe-testimonial {
+        margin-top: 60px;
+    }
+    
+    .what-we-believe-testimonial .testimonial-panel {
+        padding: 32px;
+    }
+    
+    .what-we-believe-testimonial .testimonial-quote {
+        font-size: 24px;
+        line-height: 34px;
+        margin-bottom: 24px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .what-we-believe-section {
+        padding: 40px 0;
+    }
+    
+    .what-we-believe-section .section-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    
+    .what-we-believe-intro {
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 32px;
+    }
+    
+    .what-we-believe-testimonial {
+        margin-top: 40px;
+    }
+    
+    .what-we-believe-testimonial .testimonial-panel {
+        padding: 24px;
+    }
+    
+    .what-we-believe-testimonial .testimonial-quote {
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 20px;
+    }
+    
+    .what-we-believe-testimonial .testimonial-name {
+        font-size: 16px;
+    }
+    
+    .what-we-believe-testimonial .testimonial-title,
+    .what-we-believe-testimonial .testimonial-company {
+        font-size: 14px;
+    }
+}
+
+/* Who We Are Section */
+.who-we-are-section {
+    padding: 100px 0;
+    background: #00000033;
+    position: relative;
+}
+
+.who-we-are-section .section-title {
+    text-align: center;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+.who-we-are-description {
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--light-color);
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Responsive Who We Are */
+@media (max-width: 991.98px) {
+    .who-we-are-section {
+        padding: 60px 0;
+    }
+    
+    .who-we-are-section .section-title {
+        font-size: 28px;
+        margin-bottom: 24px;
+    }
+    
+    .who-we-are-description {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .who-we-are-section {
+        padding: 40px 0;
+    }
+    
+    .who-we-are-section .section-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    
+    .who-we-are-description {
+        font-size: 14px;
+        line-height: 22px;
     }
 }
 
@@ -2060,15 +2338,6 @@ p {
     color: #fff;
     margin: 0 0 24px 0;
     font-style: italic;
-    quotes: """ """;
-}
-
-.testimonial-quote::before {
-    content: open-quote;
-}
-
-.testimonial-quote::after {
-    content: close-quote;
 }
 
 .testimonial-attribution {
