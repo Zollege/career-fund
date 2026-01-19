@@ -75,4 +75,27 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Initialize calculation
     calculatePayment();
+    
+    // Growth Services Tabs Functionality
+    const serviceTabs = document.querySelectorAll('.service-tab');
+    const tabContents = document.querySelectorAll('.tab-content');
+    
+    if (serviceTabs.length > 0) {
+        serviceTabs.forEach(tab => {
+            tab.addEventListener('click', function() {
+                const targetTab = this.getAttribute('data-tab');
+                
+                // Remove active class from all tabs and contents
+                serviceTabs.forEach(t => t.classList.remove('active'));
+                tabContents.forEach(content => content.classList.remove('active'));
+                
+                // Add active class to clicked tab and corresponding content
+                this.classList.add('active');
+                const targetContent = document.getElementById(targetTab + '-content');
+                if (targetContent) {
+                    targetContent.classList.add('active');
+                }
+            });
+        });
+    }
 });

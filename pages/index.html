@@ -1,0 +1,220 @@
+---
+layout: default
+title: Home
+description: Welcome to Career Fund
+permalink: /
+---
+<!-- Hero Section -->
+<div class="bg-gradient-secondary">
+<section class="hero-section">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>
+                    Empowering <span class="font-gradient-primary">Students</span> and <span class="font-gradient-primary">Trade Schools</span> to Grow on their Own Terms
+                </h1>
+                <p>Remove the friction in your student's journey so you both can focus on growth.</p>
+            </div>
+            <div class="hero-image-wrapper">
+                <img src="{{ '/assets/uploads/homepage/hero.png' | relative_url }}" alt="Student working in trade school">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Feature Cards Section -->
+<section class="feature-cards">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="feature-card bg-blur-2">
+                    <img src="{{ '/assets/uploads/icons/star-image.svg' | relative_url }}" alt="Star icon" class="feature-card-icon">
+                    <h2 class="feature-card-title">Partners</h2>
+                    <p class="feature-card-description">For Trade Schools looking for solutions to help you scale operations and expand your impact</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="feature-card bg-blur-2">
+                    <img src="{{ '/assets/uploads/icons/star-image.svg' | relative_url }}" alt="Star icon" class="feature-card-icon">
+                    <h2 class="feature-card-title">Students</h2>
+                    <p class="feature-card-description">For current or future students who need flexible payment options that fit their budget</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+
+<!-- Payment Calculator Section -->
+<section class="payment-calculator-section">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+                <div class="calculator-widget bg-blur-2">
+                    <h3 class="text-center">Your School Here</h3>
+                    <div class="calculator-cost-info">
+                        <div class="cost-item">
+                            <span>Program Cost:</span>
+                            <span id="program-cost">$4,000</span>
+                        </div>
+                        <div class="cost-item">
+                            <span>Payment Plan Fee:</span>
+                            <span id="plan-fee">$300</span>
+                        </div>
+                    </div>
+                    <div class="gray-bottom-border calculator-divider"></div>
+                    
+                    <div class="calculator-controls">
+                        <div class="slider-control">
+                            <div class="slider-label-row">
+                                <label for="deposit-slider">Deposit:</label>
+                                <span class="slider-value" id="deposit-value">$399</span>
+                            </div>
+                            <input type="range" id="deposit-slider" class="custom-slider" min="0" max="2000" value="399" step="50">
+                        </div>
+                        
+                        <div class="slider-control">
+                            <div class="slider-label-row">
+                                <label for="payments-slider">Payments:</label>
+                                <span class="slider-value" id="payments-value">14 weeks</span>
+                            </div>
+                            <input type="range" id="payments-slider" class="custom-slider" min="4" max="52" value="14" step="2">
+                        </div>
+                        
+                        <div class="slider-control">
+                            <div class="slider-label-row">
+                                <label for="frequency-slider">Frequency:</label>
+                                <span class="slider-value" id="frequency-value">Bi-weekly</span>
+                            </div>
+                            <input type="range" id="frequency-slider" class="custom-slider" min="0" max="2" value="1" step="1">
+                        </div>
+                    </div>
+                    
+                    <div class="payment-result">
+                        <h3 class="font-gradient-primary mb-0">Your Payment: $49 per payment</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="how-it-works">
+                    <h2 class="light-color">How It Works</h2>
+                    <p>Use the payment calculator to find the right payment schedule for you. Use the sliders or drop-down options to adjust your deposit, payment frequency and payment length. As you make changes, Your Payment amount will update automatically.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- By The Numbers Section -->
+<section class="by-the-numbers-section">
+    <div class="container">
+        <h2 class="section-title">By The Numbers</h2>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+                <div class="stat-item">
+                    <div class="stat-value font-gradient-primary">180+</div>
+                    <div class="stat-label">Program Partners</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="stat-item">
+                    <div class="stat-value font-gradient-primary">35+</div>
+                    <div class="stat-label">States and Growing</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="stat-item">
+                    <div class="stat-value font-gradient-primary">97%</div>
+                    <div class="stat-label">Collection Rate</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="stat-item">
+                    <div class="stat-value font-gradient-primary">4.8/5</div>
+                    <div class="stat-label">Student Satisfaction</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How To Partner Section -->
+<section class="how-to-partner-section">
+    <div class="container">
+        <h2 class="section-title">How To Partner with Career Fund</h2>
+        <div class="partner-steps">
+            <div class="step-item">
+                <div class="step-number">1</div>
+                <h3 class="step-title">Discovery</h3>
+                <p class="step-description">Schedule a call with our team to discuss your needs and ensure alignment</p>
+            </div>
+            <div class="step-connector"></div>
+            <div class="step-item">
+                <div class="step-number">2</div>
+                <h3 class="step-title">Agreement</h3>
+                <p class="step-description">Agree on transparent terms that enable more students to attend your school</p>
+            </div>
+            <div class="step-connector"></div>
+            <div class="step-item">
+                <div class="step-number">3</div>
+                <h3 class="step-title">Implement</h3>
+                <p class="step-description">Easily implement Career Fund with our tech-friendly platform and support</p>
+            </div>
+            <div class="step-connector"></div>
+            <div class="step-item">
+                <div class="step-number">4</div>
+                <h3 class="step-title">Scale</h3>
+                <p class="step-description">Utilize our intuitive dashboards to identify enrollment trends to accelerate growth</p>
+            </div>
+        </div>
+        <div class="partner-cta">
+            <a href="#" class="cta-btn"><span class="font-gradient-primary">Schedule Meeting</span></a>
+        </div>
+    </div>
+</section>
+
+<!-- Our Mission Section -->
+<section class="our-mission-section">
+    <div class="container">
+        <h2 class="section-title">Our Mission</h2>
+        <p class="mission-text">
+            Our mission is to make education that can lead to fulfilling careers accessible to everyone. We do this by
+            partnering with select Trade Schools to <span class="font-gradient-primary">empower students</span> to
+            select a payment plan that fits their financial situation. We believe in <span
+                class="font-gradient-primary">transparency</span> which is why we have no hidden fees, avoid deceptive
+            language and complex financial terms. We combine fair financing options with the most advanced security
+            technology to ensure our students and partners are <span class="font-gradient-primary">protected</span>.
+        </p>
+        <div class="mission-cta">
+            <a href="#" class="cta-btn"><span class="font-gradient-primary">Learn More</span></a>
+        </div>
+    </div>
+</section>
+
+<!-- Partner with Us Section -->
+<section class="partner-with-us-section">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+                <div class="partner-content">
+                    <h2 class="partner-title">Partner with Us</h2>
+                    <p class="partner-description">
+                        Would you like to learn more about how Career Fund can help your program scale? Complete the form and we'll reach out to schedule a time to see how we can help.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="partner-form-wrapper bg-blur-2">
+                    <div class="partner-form">
+                        <input type="text" class="form-input" placeholder="Your Name" required>
+                        <input type="email" class="form-input" placeholder="Email Address" required>
+                        <input type="text" class="form-input" placeholder="School/Organization Name" required>
+                        <textarea class="form-input form-textarea" placeholder="Tell us about your needs..." rows="4" required></textarea>
+                        <button type="submit" class="btn btn-primary form-submit">Submit Request</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
