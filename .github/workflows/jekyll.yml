@@ -46,6 +46,7 @@ jobs:
           node-version: '20'
       - name: Install npm dependencies
         run: npm install
+      - run: npm run postinstall
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
