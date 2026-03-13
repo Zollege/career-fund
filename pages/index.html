@@ -45,6 +45,7 @@ permalink: /
 </section>
 </div>
 
+{% comment %}
 <!-- Payment Calculator Section -->
 <section class="payment-calculator-section">
     <div class="container">
@@ -105,6 +106,7 @@ permalink: /
         </div>
     </div>
 </section>
+{% endcomment %}
 
 <!-- By The Numbers Section -->
 <section class="by-the-numbers-section">
@@ -168,7 +170,7 @@ permalink: /
                 <p class="step-description">Utilize our intuitive dashboards to identify enrollment trends to accelerate growth</p>
             </div>
         </div>
-        <div class="partner-cta">
+        <div class="d-none partner-cta">
             <a href="#" class="cta-btn"><span class="font-gradient-primary">Schedule Meeting</span></a>
         </div>
     </div>
@@ -186,12 +188,13 @@ permalink: /
             language and complex financial terms. We combine fair financing options with the most advanced security
             technology to ensure our students and partners are <span class="font-gradient-primary">protected</span>.
         </p>
-        <div class="mission-cta">
+        <div class="d-none mission-cta">
             <a href="#" class="cta-btn"><span class="font-gradient-primary">Learn More</span></a>
         </div>
     </div>
 </section>
 
+{% comment %}
 <!-- Partner with Us Section -->
 <section class="partner-with-us-section">
     <div class="container">
@@ -218,7 +221,7 @@ permalink: /
         </div>
     </div>
 </section>
-
+{% endcomment %}
 <!-- Schema.org Structured Data -->
 {% include schema-website.html %}
 {% include schema-howto-partner.html %}

@@ -39,8 +39,8 @@ permalink: /partners/
             <h2 class="growth-services-title">Growth Services</h2>
             <div class="services-tabs">
                 <button class="service-tab active" data-tab="financing">Student Financing</button>
-                <button class="service-tab" data-tab="collections">Collections</button>
-                <button class="service-tab" data-tab="support">Student Support</button>
+                <button class="d-none service-tab" data-tab="collections">Collections</button>
+                <button class="d-none service-tab" data-tab="support">Student Support</button>
             </div>
 
             <div class="tab-content active" id="financing-content">
@@ -192,7 +192,7 @@ permalink: /partners/
                             </a>
                             <a href="#" class="nav-item">
                                 <span class="nav-icon">⭐</span>
-                                <span class="nav-text">Loan</span>
+                                <span class="nav-text">Account</span>
                                 <span class="nav-arrow">›</span>
                             </a>
                             <a href="#" class="nav-item">
@@ -232,7 +232,7 @@ permalink: /partners/
                         <h2 class="dashboard-title">Student Financing</h2>
                         <div class="dashboard-cards">
                             <div class="dashboard-card">
-                                <div class="card-label">Loan Balance</div>
+                                <div class="card-label">Account Balance</div>
                                 <div class="card-value">$20,500</div>
                                 <div class="progress-bar">
                                     <div class="progress-fill" style="width: 65%"></div>
@@ -286,19 +286,19 @@ permalink: /partners/
     </div>
 </section>
 
-<!-- Student Loan Accounts Section -->
+<!-- Student Accounts Section -->
 <section class="student-loan-accounts-section">
     <div class="container">
         <div class="accounts-content">
             <div class="accounts-panel col-lg-6">
-                <h2 class="accounts-title">Student Loan Accounts</h2>
+                <h2 class="accounts-title">Student Accounts</h2>
                 <div class="accounts-layout">
                     <div class="accounts-table-wrapper">
                         <table class="accounts-table">
                             <thead class="text-nowrap">
                                 <tr>
                                     <th>Name</th>
-                                    <th>Loan Amount</th>
+                                    <th>Account Balance</th>
                                     <th>Payment Due</th>
                                     <th>Status</th>
                                 </tr>
@@ -368,6 +368,7 @@ permalink: /partners/
     </div>
 </section>
 
+{% comment %}
 <!-- Partner with Us Section -->
 <section class="partner-with-us-partners-section">
     <div class="container">
@@ -409,7 +410,7 @@ permalink: /partners/
         </div>
     </div>
 </section>
-
+{% endcomment %}
 <!-- Schema.org Structured Data -->
 {% include schema-organization.html %}
 {% include schema-breadcrumb.html %}
